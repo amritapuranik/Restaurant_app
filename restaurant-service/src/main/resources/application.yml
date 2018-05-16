@@ -8,8 +8,8 @@ spring:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
 
 # HTTP Server
-server:
-  port: 0   # HTTP (Tomcat) port
+server: 13.127.37.43 
+  port: 8082  # HTTP (Tomcat) port
 
 # Discovery Server Access
 eureka:
@@ -24,7 +24,7 @@ eureka:
         instanceInfoReplicationIntervalSeconds: 5
         initialInstanceInfoReplicationIntervalSeconds: 5
         serviceUrl:
-            defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
+            defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://13.127.37.43:8761}/eureka/
         fetchRegistry: true
         healthcheck:
             enabled: true
@@ -36,7 +36,7 @@ spring:
   profiles: docker
 
 server:
-  port: 8080
+  port: 8082
 
 eureka:
   instance:
