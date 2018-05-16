@@ -1,6 +1,6 @@
 FROM java:8-jre
-MAINTAINER sourabhh
-EXPOSE 8080
+MAINTAINER amritapuranik
+EXPOSE 8761
 COPY maven /maven/
 CMD java -Dspring.profiles.active="docker" -jar \
 /maven/eureka-server.jar server \
