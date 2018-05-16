@@ -36,7 +36,7 @@
 
                             <build>
                                 <from>java:8-jre</from>
-                                <maintainer>sourabhh</maintainer>
+                                <maintainer>amritapuranik</maintainer>
                                 <assembly>
                                     <descriptor>docker-assembly.xml</descriptor>
                                 </assembly>
@@ -52,7 +52,7 @@
                             <run>
                                 <namingStrategy>alias</namingStrategy>
                                 <ports>
-                                    <port>${docker.port}:8080</port>
+                                    <port>${docker.port}:8082</port>
                                 </ports>
                                 <volumes>
                                     <bind>
