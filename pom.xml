@@ -26,23 +26,23 @@
         <module>booking-service</module>
     </modules>
 
-    <!-- profiles>
+     profiles>
         <profile>
             <id>docker</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <spring.profiles.active>docker</spring.profiles.active>
             </properties>
         </profile>
         <profile>
             <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <properties>
                 <spring.profiles.active>dev</spring.profiles.active>
             </properties>
         </profile>
-    </profiles -->
+    </profiles>
     <!-- Build step is required to include the spring boot artifacts in generated jars-->
     <build>
         <finalName>${project.artifactId}</finalName>
